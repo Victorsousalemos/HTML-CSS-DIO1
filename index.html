@@ -5,28 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curso básico HTML5 e CSS3 - DIO</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <img
-      src="images/timon-studler-ABGaVhJxwDQ-unsplash (1).jpg"
-      alt="pessoas andando em uma rua"
-    />
     <header>
-      <h1>Victor Lemos</h1>
+      <img 
+        src="images/timon-studler-ABGaVhJxwDQ-unsplash (1).jpg" 
+        alt="pessoas andando em uma rua"
+        class="photo"
+      />
+      <h1 id="title">Victor Lemos</h1>
     </header>
     <section>
       <header>
-        <h2>Posts</h2>
+        <h2 class="subtitle">Posts</h2>
       </header>
-      <article>
+      <article class="post">
         <header>
-          <h3>Post #1</h3>
+          <h3 class="post_title">Post #1</h3>
           <img
             src="images/maxwell-nelson-KXkgOigCqj0-unsplash (1).jpg"
             alt="computador em uma mesa marrom com codigos na tela"
+            class="post_image"
           />
         </header>
-        <p>
+        <p class="post_content">
           Lorem ipsum dolor sit amet,
           <a
             href="https://www.linkedin.com/in/victorsousalemos/"
@@ -50,30 +53,37 @@
       </article>
     </section>
     <footer>
-      <ul>
-        <a href="mailto:victorsousalemos@hotmail.com"
-          >victorsousalemos@hotmail.com</a
-        >
-      </ul>
-      <ul>
-        <a href="https://www.linkedin.com/in/victorsousalemos/"
-          >https://www.linkedin.com/in/victorsousalemos/</a
-        >
-      </ul>
-      <ul>
-        <a href="https://github.com/Victorsousalemos" target="_blank"
-          >https://github.com/Victorsousalemos</a
-        >
+      <ul class="contacts_list">
+        <li>
+          <a href="mailto:victorsousalemos@hotmail.com"
+            >victorsousalemos@hotmail.com</a
+          >
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/victorsousalemos/"
+            >https://www.linkedin.com/in/victorsousalemos/</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/Victorsousalemos" target="_blank"
+            >https://github.com/Victorsousalemos</a
+          >
+        </li>
       </ul>
     </footer>
   </body>
 </html>
 
 <!--
+  HTML-
   href com mailto: é quando quer colocar o link pra acessar direto para o e-mail
   img src= é o caminho da imagem
   img alt é uma imagem alternativa pra acessibilidade informando o que tem na imagem
   ul - lista que não precisa de ordem
   ol - lista que precisa de ordem
   li - vai dentro as tags ul/ol se referindo aos itens da lista
+
+  CSS-
+  id - só pode ter uma
+  class - pode ter varias
 -->
